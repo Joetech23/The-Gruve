@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Product Page</title>
+  <style>
+    /* Add your styles here */
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- Navigation menu for categories -->
+    <button onclick="filterProducts('shirts')">Shirts</button>
+    <button onclick="filterProducts('pants')">Pants</button>
+    <button onclick="filterProducts('accessories')">Accessories</button>
+    <!-- Add more buttons for other categories as needed -->
+  </nav>
+
+  <div id="product-container">
+    <!-- Products will be displayed here based on the selected category -->
+    <!-- Use server-side code to dynamically generate product elements -->
+    <!-- Or replace this with your actual product HTML markup -->
+    <div class="product shirts">Product 1 (Shirt)</div>
+    <div class="product pants">Product 2 (Pants)</div>
+    <div class="product accessories">Product 3 (Accessories)</div>
+    <!-- Add more product elements with appropriate classes -->
+  </div>
+
+  <script>
+    function filterProducts(category) {
+      // Hide all products
+      var products = document.querySelectorAll('.product');
+      products.forEach(function(product) {
+        product.style.display = 'none';
+      });
+
+      // Show products in the selected category
+      var selectedCategoryProducts = document.querySelectorAll('.' + category);
+      selectedCategoryProducts.forEach(function(product) {
+        product.style.display = 'block';
+      });
+    }
+  </script>
+
+</body>
+</html>

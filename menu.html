@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The gruve</title>
+    <!-- StyleSheets -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="./js/all.min.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="./images/ezgif-3-6c26a88bad.gif" alt="" />
+    </div>
+
+    <header class="header">
+      <!-- <a href="/" class="logo">Deli<span class="yellow">roo</span></a> -->
+      <a href="./" class="header__details"><img src="./images/the Gruve logo.png" alt=""></a>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Services</a>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Contact Us</a>
+        <a href="menu.html" class="btn">Make an Order</a>
+      </nav>
+      <div class="nav-cart">
+        <span class="cart-label">0</span>
+        <i class="fa fa-shopping-cart fa-shake" onclick="toggleCart()"></i>
+        <div class="cart-card"  id="cartContent">
+          <div class="cart-wrap">
+            
+          </div>
+          <div class="cart-total"><i class="fa fa-hourglass-empty"></i> Empty Cart</div>
+          <button onclick="handleCheckout()" class="cart-checkout">Check Out</button>
+        </div>
+      </div>
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <img src="./images/grid-outline.svg" alt="" />
+      </div>
+    </header>
+
+
+
+
+
+    <!-- product header -->
+
+    <aside class="rollerslide">
+        <div class="rollerslide__wrap">
+            <div class="rollerslide__card">
+                <img src="./images/2018-03-09.jpg" class="rollerslide__image">
+                <div class="rollerslide__text">
+                    <h2 class="rollerslide__title">Oder your Quality Food from Home</h2>
+                    <!-- <p class="rollerslide__subtitle">Begin to change the world with Ecommerce</p> -->
+                </div>
+            </div>
+    
+            <div class="rollerslide__card">
+                <img src="./images/2019-01-03.jpg" class="rollerslide__image" alt="">
+                <div class="rollerslide__text">
+                    <h2 class="rollerslide__title">We know say rice cost but with 1k you fit stil chop well</h2>
+                    <!-- <p class="rollerslide__subtitle">Begin to change the world with Ecommerce</p> -->
+                </div>
+            </div>
+    
+            <div class="rollerslide__card">
+                <img src="./images/2017-04-11.jpg" class="rollerslide__image" alt="">
+                <div class="rollerslide__text">
+                    <h2 class="rollerslide__title">Eat Healthy Food to Live a Healthier Life</h2>
+                    <!-- <p class="rollerslide__subtitle">Begin to change the world with Ecommerce</p> -->
+                </div>
+            </div>
+    
+        </div>
+      </aside> 
+    
+<section class="foodcategories">
+  <div class="unique-class-name">
+    <a href="#" class="unique-class-name__link">ALL</a>
+    <a href="#" class="unique-class-name__link">Breakfast</a>
+    <a href="#" class="unique-class-name__link">Lunch</a>
+    <a href="#" class="unique-class-name__link">Dinner</a>
+
+  </div>
+</section>
+<!-- menu item card -->
+
+   <div class="product-section gallery">
+
+
+   </div>
+
+    <!-- App -->
+    <section class="app" id="contact">
+      <div class="image">
+        <img src="./images/phonegruve.png" alt="" />
+      </div>
+      <div class="content">
+        <h3>Coming Soon!</h3>
+        <h3>Place your order through our app</h3>
+        <p>
+          You can easily place your order using our mobile app. Now you can
+          download our app for both IOS and Android mobiles.
+        </p>
+        <div class="links">
+          <img src="./images/app-store.png" alt="" />
+          <img src="./images/google-play.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="top">
+        <div class="content">
+          <a href="" class="logo">The<span class="yellow">Gruve</span></a>
+          <p>
+            At The Gruve, we craft more than just food; we create experiences to lighten your mood. Our culinary maestros blend passion with taste, making each dish a masterpiece, not to go to waste.
+          </p>
+        </div>
+
+        <div class="links">
+          <div class="link">
+            <h4>Contact Information</h4>
+            <div>
+              <img src="./images/location-cross.svg" alt="" />
+              <span>Prince Abubakar Audu University, Anyigba Kogi State</span>
+            </div>
+            <div>
+              <img src="./images/sms-tracking.svg" alt="" />
+              <span>Thegruve@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="link">
+            <h4>Quick Links</h4>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Download</a>
+          </div>
+
+          <div class="link">
+            <h4>Legal</h4>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term of Use</a>
+            <a href="#">Conditions</a>
+            <a href="#">Location</a>
+          </div>
+
+          <div class="link">
+            <h4>Connect with Us</h4>
+            <div>
+              <img src="./images/instagram.svg" alt="" />
+              <span>Instagram</span>
+            </div>
+            <div>
+              <img src="./images/twitter.svg" alt="" />
+              <span>Twitter</span>
+            </div>
+            <div>
+              <img src="./images/facebook.svg" alt="" />
+              <span>Facebook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2023 The Gruve, All rights reserved.</p>
+      </div>
+    </footer>
+
+
+    <!-- Go To Top -->
+    <div class="scroll-top">
+      <img src="./images/arrow-up-outline.svg" alt="" />
+    </div>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script>
+ 
+
+// shopping cart
+  
+const shopProducts = [
+{
+    id: 6834569,
+    productname: 'Special Festive Sales',
+    productprice: 1800,
+    productimage: "mama-cass-combo-jollof-450x450.jpg"
+  },
+  {
+    id: 6834567,
+    productname: 'Jellof Rice',
+    productprice: 1800,
+    productimage: "a74bcb0ac99a32475e945016731d8d39.jpg"
+  },
+  {
+    id: 6834568,
+    productname: 'Plantain',
+    productprice: 1100,
+    productimage: "cfc7a33e0d9601e39758424062d03f36.jpg"
+  },
+  {
+    id: 6834566,
+    productname: 'Intercon',
+    productprice: 650,
+    productimage: "intercon.jpg"
+  },
+  {
+    id: 6834565,
+    productname: 'Feista Rice',
+    productprice: 350,
+    productimage: "Fiesta-Rice.jpg"
+  },
+  {
+    id: 6834564,
+    productname: 'Fried yam and Egg Sauce',
+    productprice: 950,
+    productimage: "friedyam.jpg"
+  },
+  {
+    id: 6834563,
+    productname: 'Jollof Spaghetti',
+    productprice: 2000,
+    productimage: "spag.jpg"
+  },
+  {
+    id: 683783,
+    productname: 'Meat Pie',
+    productprice: 2000,
+    productimage: "mamacass-3-450x450.png"
+  },
+  {
+    id: 683663,
+    productname: 'Eba (Garri)',
+    productprice: 800,
+    productimage: "71622569fdb79e1c5ab0ea6cd9290ccc.jpg"
+  },
+  {
+    id: 663663,
+    productname: 'Hot Moi moi + Bread',
+    productprice: 1100,
+    productimage: "mama-cass-combo-moi-moi.jpg"
+  },
+  {
+    id: 663668,
+    productname: 'Five Alive (Big)',
+    productprice: 800,
+    productimage: "five-450x450.jpg"
+  },
+  {
+    id: 663667,
+    productname: 'Coca cola (Big)',
+    productprice: 300,
+    productimage: "coke-mama-cass-450x450.jpg"
+  },
+]
+const _$ = x => document.querySelector(x);
+
+// Check if "Em-Dash_cart" exists in localStorage and is a non-empty string
+let cartData = localStorage.getItem("Em-Dash_cart");
+let shopCarts = cartData ? JSON.parse(cartData) : [];
+
+// Assuming shopProducts is an array that you have defined elsewhere in your code
+const productsection = _$(".product-section");
+
+// Loop through shopProducts array and display each object in a product card html content
+shopProducts.forEach(product => {
+productsection.innerHTML += `
+
+    <div class="content1"> <img src="./images/${product.productimage}" class="productimage">
+        <h3 class="h3o">${product.productname}</h3>
+        <p class="po">${product.productname} is simply dummy text of the printing and typesetting industry. </p> <h6>&#8358;${product.productprice.toLocaleString()}</h6>
+        <ul class="ulo">
+            <li class="lo"><i class="fa fa-star checked"></i></li>
+            <li class="lo"><i class="fa fa-star checked"></i></li>
+            <li class="lo"><i class="fa fa-star checked"></i></li>
+            <li class="lo"><i class="fa fa-star checked"></i></li>
+            <li class="lo"><i class="fa fa-star checked"></i></li>
+    </ul>
+    <button class="button1" onclick="addToCart(${product.id})"><i class="fa fa-shopping-cart"></i> Add to
+      Cart</button>
+
+</div>
+`;
+});
+
+// Assuming you have a function named showCartContent
+showCartContent(shopCarts);
+
+
+function addToCart(id){
+const findProduct = shopProducts?.find(product => product.id === id)
+const checkInCart = shopCarts?.filter(el=> el.id === id)
+if(checkInCart.length){
+  toastr["error"]("Food item has Already been added to cart, click on the cart icon to proceed")
+
+toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": true,
+  "positionClass": "toast-top-full-width",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
+}
+else{
+shopCarts =[...shopCarts, {...findProduct, qty:1}]
+showCartContent(shopCarts)
+toastr["success"]("Food Item Successfully Added to Cart, Please click on the cart button")
+
+toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": true,
+  "positionClass": "toast-top-full-width",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
+}
+console.log({shopCarts})
+}
+
+function showCartContent(carts) {
+const cartLabel = _$(".cart-label"), cartWrap =_$(".cart-wrap"), cartTotal = _$(".cart-total");
+cartWrap.innerHTML = "";
+carts?.forEach(cart => {
+const {id, productname, productprice, productimage, qty} = cart; // object destructuring
+cartWrap.innerHTML += `
+<div class="cart-single">
+        <div onclick="removeFromCart(${id})"class="cart-remove">&#10007;</div>
+        <img src="./images/${productimage}" alt="${productname}" class="cart-image">
+        <div class="cart-info">
+          <h4 class="cart-name">${productname}</h4>
+          <p class="cart-price">&#8358;${productprice.toLocaleString()}</p>
+        </div>
+        <div class="cart-qtywrap">
+          <input type="number" value="${qty}" onchange="changeQuantity(${id}, this)" class="cart-qty">
+        </div>
+      </div>
+`
+})
+cartLabel.innerHTML = carts.length
+const totalCartPrice = carts.reduce((oldTotal, cart) => cart.productprice * cart.qty + oldTotal, 0)
+cartTotal.innerHTML = totalCartPrice === 0 ? 'Empty Cart' : `&#8358;${totalCartPrice.toLocaleString()}`
+localStorage.setItem("Em-Dash_cart", JSON.stringify(carts))
+}
+
+function removeFromCart(id){
+shopCarts = shopCarts.filter(el => el.id !== id)
+showCartContent(shopCarts)
+}
+
+function changeQuantity(id, input){
+shopCarts = shopCarts.map(cart =>{
+if(cart.id === id) return {...cart, qty: parseInt(input.value)}
+else return cart;
+})
+showCartContent(shopCarts)
+}
+function toggleCart() {
+var cartContent = document.getElementById("cartContent");
+cartContent.style.display = cartContent.style.display === "none" ? "block" : "none";
+}
+
+function handleCheckout(){
+const totalCartPrice = shopCarts.reduce((oldTotal, cart) => cart.productprice * cart.qty + oldTotal, 0)
+const orderNumber = Math.random().toString(6).slice(2,10)
+swal(`Payment of ${totalCartPrice.toLocaleString()} Naira is Succesful`,"Thank you for Shopping with Us. You Order number is #".concat(orderNumber), {icon: 'success'})
+const emptyCart = []
+shopCarts = []
+showCartContent(shopCarts)
+localStorage.setItem("Em-Dash_cart", shopCarts)
+}
+
+</script>
+
+    </script>
+  </body>
+</html>
